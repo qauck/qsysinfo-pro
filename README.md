@@ -3,13 +3,13 @@ Quick System Info PRO
 
 Quick System Info is an utility application for quick access of the basic system information for your Android platform, including information for CPU, memory, SD Card, running processes, network states and installed applications.
 
-This project initially started back in April 2010 after I got my first Android smart phone - 'HTC Magic'. It's a such exciting experience at that time.
+**This project initially started back in April 2010 after I got my first Android smart phone - 'HTC Magic'. It's a such exciting experience at that time.**
 
-Now after 11 years, Android has evolved so much and became more than complicated this little app can handle. So it's time to say goodbye.
+**Now after 11 years, Android has evolved so much and became more than complicated this little app can handle. So it's time to say goodbye.**
 
 This is the PRO version that previously supported by donations from all around the world.
 
-See [who](http://qsysinfo.appspot.com/supporters.jsp) love this app the most !
+See [who](http://qsysinfo.appspot.com/supporters.jsp) loves this app the most !
 
 Quick System Info is licensed under GPLv3.
 ***
