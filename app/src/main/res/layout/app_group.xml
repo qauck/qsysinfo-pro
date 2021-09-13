@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="3dip"
+    android:paddingTop="3dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/expander"
+            android:layout_width="31dip"
+            android:layout_height="35dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="9dip"
+            android:src="@drawable/expander_collapse" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txt_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="3dip"
+            android:text="header"
+            android:textAppearance="?android:attr/textAppearanceMedium" >
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

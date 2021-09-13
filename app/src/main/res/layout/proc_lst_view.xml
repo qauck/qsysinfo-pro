@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/list_head"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:minHeight="25dip"
+        android:paddingTop="3dip" >
+
+        <TextView
+            android:id="@+id/txt_head_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dip"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/primary_text_dark" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" >
+
+            <TextView
+                android:id="@+id/txt_head_mem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:layout_marginRight="4dip"
+                android:background="@drawable/bg_tcp"
+                android:gravity="right"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:text="MEM"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:visibility="invisible" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/txt_head_cpu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dip"
+                android:background="@drawable/bg_udp"
+                android:gravity="right"
+                android:minWidth="40dip"
+                android:paddingRight="5dip"
+                android:text="CPU%"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:visibility="invisible" >
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+    </ListView>
+
+    <ViewStub
+        android:id="@+id/ad_stub"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/ad_view" >
+    </ViewStub>
+
+</LinearLayout>

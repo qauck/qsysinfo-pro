@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/widget_back"
+        android:orientation="vertical"
+        android:padding="20dip" >
+
+        <TextView
+            android:id="@+id/txt_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dip"
+            android:layout_marginLeft="4dip"
+            android:text="@string/background"
+            android:textAppearance="?android:attr/textAppearanceMedium" >
+        </TextView>
+
+        <Spinner
+            android:id="@+id/sp_transparency"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </Spinner>
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:id="@+id/types_pane"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/txt_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dip"
+                    android:text="@string/select_types_hint"
+                    android:textAppearance="?android:attr/textAppearanceMedium" >
+                </TextView>
+
+                <CheckBox
+                    android:id="@+id/ckb_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/info_widget_name" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/ckb_task"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/task_widget_name" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/ckb_cache"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cache_widget_name" >
+                </CheckBox>
+
+                <CheckBox
+                    android:id="@+id/ckb_history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/history_widget_name" >
+                </CheckBox>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/widget_back"
+        android:paddingBottom="10dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="15dip" >
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:minWidth="120dip"
+            android:text="@android:string/ok" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:minWidth="120dip"
+            android:text="@android:string/cancel" >
+        </Button>
+    </RelativeLayout>
+
+</LinearLayout>

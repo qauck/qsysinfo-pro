@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:maxLevel="0" android:drawable="@drawable/cpu_noop" />
+	<item android:maxLevel="1" android:drawable="@drawable/cpu_0" />
+	<item android:maxLevel="2" android:drawable="@drawable/cpu_1" />
+	<item android:maxLevel="3" android:drawable="@drawable/cpu_2" />
+	<item android:maxLevel="4" android:drawable="@drawable/cpu_3" />
+	<item android:maxLevel="5" android:drawable="@drawable/cpu_4" />
+	<item android:maxLevel="6" android:drawable="@drawable/cpu_5" />
+	<item android:maxLevel="7" android:drawable="@drawable/cpu_6" />
+	<item android:maxLevel="8" android:drawable="@drawable/placeholder" />
+</level-list>

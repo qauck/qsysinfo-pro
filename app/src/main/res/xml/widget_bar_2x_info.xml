@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+	android:initialLayout="@layout/widget_bar" android:minHeight="64dip"
+	android:minWidth="146dip" android:configure="org.uguess.android.sysinfo.WidgetConfigure">
+</appwidget-provider>

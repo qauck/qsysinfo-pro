@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.uguess.android.sysinfo"
+    android:installLocation="auto"
+    android:versionCode="127"
+    android:versionName="3.8.4">
+
+    <uses-sdk
+        android:minSdkVersion="3"
+        android:targetSdkVersion="12"></uses-sdk>
+
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location.network"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"></uses-permission>
+    <uses-permission android:name="android.permission.GET_TASKS"></uses-permission>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"></uses-permission>
+    <uses-permission android:name="com.android.browser.permission.WRITE_HISTORY_BOOKMARKS"></uses-permission>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"></uses-permission>
+    <uses-permission android:name="android.permission.LOCAL_MAC_ADDRESS"></uses-permission>
+    <uses-permission android:name="android.permission.DUMP"></uses-permission>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"></supports-screens>
+
+    <application
+        android:name="org.uguess.android.sysinfo.QSystemInfoApp"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon"
+        android:theme="@android:style/Theme.DeviceDefault"
+        android:label="@string/app_name_s">
+        <activity
+            android:name="org.uguess.android.sysinfo.QSystemInfo"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/app_name_s"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.SysInfoManager"
+            android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.SysInfoManager$InfoSettings"
+            android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.LogViewer"
+            android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.LogViewer$LogSettings"
+            android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.ApplicationManager"
+            android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.ApplicationManager$AppSettings"
+            android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.ProcessManager"
+            android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.ProcessManager$ProcessSettings"
+            android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.NetStateManager"
+            android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.NetStateManager$NetStateSettings"
+            android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.BatteryInfoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.SensorInfoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.GpsInfoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.InputInfoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.UsbInfoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.CpuInfoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.MemInfoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.StorageInfoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.NetworkInfoActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:theme="@android:style/Theme.Dialog"></activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.PropertiesViewer"
+            android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.PropertiesViewer$GLPropertiesViewerStub"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:process=":remote"
+            android:stateNotNeeded="true"
+            android:theme="@android:style/Theme.Translucent"></activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.RestoreAppActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.RestoreAppActivity$RestoreAppSettings"
+            android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.ClearHistoryActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"
+            android:label="@string/history_widget_name"></activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.QSystemInfo$ErrorReportActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation"></activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.WidgetConfigure"
+            android:configChanges="keyboard|keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"></action>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.uguess.android.sysinfo.ShortcutAdapterActivity$ShortcutConfigure">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="org.uguess.android.sysinfo.ShortcutAdapterActivity"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent"></activity>
+
+        <receiver
+            android:name="org.uguess.android.sysinfo.WidgetProvider"
+            android:icon="@drawable/bar_icon"
+            android:label="@string/widget_bar_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"></action>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_bar_info"></meta-data>
+        </receiver>
+        <receiver
+            android:name="org.uguess.android.sysinfo.WidgetProvider$Bar2xWidget"
+            android:icon="@drawable/bar_icon"
+            android:label="@string/widget_bar_2x_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"></action>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_bar_2x_info"></meta-data>
+        </receiver>
+        <receiver
+            android:name="org.uguess.android.sysinfo.WidgetProvider$TaskWidget"
+            android:icon="@drawable/bar_icon"
+            android:label="@string/task_widget_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"></action>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info"></meta-data>
+        </receiver>
+        <receiver
+            android:name="org.uguess.android.sysinfo.WidgetProvider$InfoWidget"
+            android:icon="@drawable/bar_icon"
+            android:label="@string/info_widget_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"></action>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info"></meta-data>
+        </receiver>
+        <receiver
+            android:name="org.uguess.android.sysinfo.WidgetProvider$HistoryWidget"
+            android:icon="@drawable/bar_icon"
+            android:label="@string/history_widget_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"></action>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info"></meta-data>
+        </receiver>
+        <receiver
+            android:name="org.uguess.android.sysinfo.WidgetProvider$CacheWidget"
+            android:icon="@drawable/bar_icon"
+            android:label="@string/cache_widget_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"></action>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info"></meta-data>
+        </receiver>
+
+        <service android:name="org.uguess.android.sysinfo.EndTaskService"></service>
+        <service android:name="org.uguess.android.sysinfo.StatusUpdaterService"></service>
+        <service android:name="org.uguess.android.sysinfo.ClearCacheService"></service>
+        <service
+            android:name="org.uguess.android.sysinfo.PropertiesViewer$GetPropsService"
+            android:process=":remote"></service>
+        <service
+            android:name="org.uguess.android.sysinfo.WidgetAdapterService"
+            android:exported="true"></service>
+        <service android:name="org.uguess.android.sysinfo.PopService"></service>
+        <service android:name="org.uguess.android.sysinfo.QSystemInfo$ForegroundStarterService"></service>
+
+        <receiver android:name="org.uguess.android.sysinfo.QSystemInfo$BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

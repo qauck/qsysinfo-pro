@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="25dip"
+    android:orientation="vertical"
+    android:paddingBottom="2dip"
+    android:paddingTop="2dip" >
+
+    <LinearLayout
+        android:id="@+id/ll_proc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_background"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_proc_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="proc"
+            android:textColor="@color/clouds" />
+
+        <TextView
+            android:id="@+id/txt_traffic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dip"
+            android:text="traffic"
+            android:textColor="@color/concrete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/txt_proto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="proto"
+                android:textColor="#fff"
+                android:textSize="12sp" >
+            </TextView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_ip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="ip" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_state"
+            android:layout_width="95dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="2dip"
+            android:text="state" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_proc2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <TextView
+            android:id="@+id/txt_src_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="proc"
+            android:textColor="@color/asbestos" >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<ImageView android:id="@+id/img_kill" android:focusable="true"
+		android:layout_gravity="center" android:background="@drawable/widget_highlight"
+		android:scaleType="center" android:src="@drawable/x"
+		android:layout_height="46dip" android:layout_width="46dip"></ImageView>
+	<ImageView android:layout_width="1dip" android:layout_height="fill_parent"
+		android:background="@drawable/widget_div" android:id="@+id/img_div1"></ImageView>
+	<ImageView android:id="@+id/img_info" android:focusable="true"
+		android:layout_gravity="center" android:scaleType="center"
+		android:background="@drawable/widget_highlight" android:src="@drawable/i"
+		android:layout_height="46dip" android:layout_width="46dip"></ImageView>
+	<ImageView android:layout_width="1dip" android:layout_height="fill_parent"
+		android:background="@drawable/widget_div" android:id="@+id/img_div2"></ImageView>
+	<ImageView android:id="@+id/img_cache" android:focusable="true"
+		android:layout_gravity="center" android:scaleType="center"
+		android:background="@drawable/widget_highlight" android:src="@drawable/c"
+		android:layout_width="46dip" android:layout_height="46dip"></ImageView>
+	<ImageView android:layout_width="1dip" android:layout_height="fill_parent"
+		android:background="@drawable/widget_div" android:id="@+id/img_div3"></ImageView>
+	<ImageView android:layout_width="46dip"
+		android:layout_height="46dip" android:scaleType="center"
+		android:background="@drawable/widget_highlight"
+		android:layout_gravity="center" android:focusable="true" android:id="@+id/img_history"
+		android:src="@drawable/h"></ImageView>
+
+</merge>

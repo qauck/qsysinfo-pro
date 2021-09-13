@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/txt_proto_header"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dip"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="protocol"
+            android:textColor="#fff" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_ip_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="local_remote_addr"
+            android:textColor="#fff" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_state_header"
+            android:layout_width="95dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="2dip"
+            android:text="state"
+            android:textColor="#fff" >
+        </TextView>
+    </LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+    </ListView>
+
+    <ViewStub
+        android:id="@+id/ad_stub"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/ad_view" >
+    </ViewStub>
+
+</LinearLayout>
