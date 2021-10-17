@@ -9,7 +9,7 @@ Quick System Info is an utility application for quick access of the basic system
 
 This is the PRO version that previously supported by donations from all around the world.
 
-See [who](http://qsysinfo.appspot.com/supporters.jsp) loves this app the most !
+See [who](https://qauck.github.io/qsysinfo-pro/supporters.html) loves this app the most !
 
 Quick System Info is licensed under GPLv3.
 
@@ -51,5 +51,7 @@ Also Thanks to following translation contributors:
 
 [FAQ](https://github.com/qauck/qsysinfo/wiki/FAQ)
 ==============
+
 [Features](https://github.com/qauck/qsysinfo/wiki/Features)
 ==============
+
