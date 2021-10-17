@@ -51,5 +51,6 @@ Also Thanks to following translation contributors:
 
 [FAQ](https://github.com/qauck/qsysinfo/wiki/FAQ)
 ==============
+
 [Features](https://github.com/qauck/qsysinfo/wiki/Features)
 ==============
